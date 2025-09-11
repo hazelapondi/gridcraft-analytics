@@ -212,7 +212,7 @@
 
         .stat-icon.revenue { background: rgba(52, 199, 89, 0.15); color: var(--accent-green); }
         .stat-icon.users { background: rgba(0, 122, 255, 0.15); color: var(--accent-blue); }
-        .stat-icon.conversion { background: rgba(255, 149, 0, 0.15); color: var(--accent-orange); }
+        .stat-icon.conversion { background: rgba(255, 149, 0, 0.15); color: var(--accent-green); }
         .stat-icon.growth { background: rgba(52, 199, 89, 0.15); color: var(--accent-green); }
 
         .stat-value {
@@ -490,6 +490,38 @@
             .section-title {
                 font-size: 28px;
             }
+        }
+            /* Mobile-first approach - center footer content on mobile */
+        .footer {
+          text-align: center;
+        }
+        
+        .footer-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+        
+        .footer-brand {
+          text-align: center;
+        }
+        
+        /* For larger screens (tablet and above) - adjust as needed */
+        @media (min-width: 768px) {
+          .footer {
+            text-align: left; /* Reset to left alignment on larger screens if desired */
+          }
+          
+          .footer-content {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+          }
+          
+          .footer-brand {
+            text-align: left; /* Reset brand alignment on larger screens */
+          }
         }
     </style>
 </head>
