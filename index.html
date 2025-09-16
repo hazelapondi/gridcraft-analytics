@@ -241,20 +241,35 @@
         .stat-change.positive { color: var(--accent-green); }
         .stat-change.negative { color: var(--accent-blue); }
 
+        .stat-change.positive a {
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none; /* Remove default underline */
+            transition: all 0.3s ease; /* Smooth transition for hover effects */
+        }
+        
+        .stat-change.positive a:hover {
+            color: #f0f0f0; /* Slightly lighter white on hover */
+            text-decoration: underline; /* Add underline on hover */
+            transform: translateY(-1px); /* Subtle lift effect */
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); /* Subtle glow effect */
+        }
+
         .stat-change.negative a {
-        font-size: 16px;
-        color: white;
-        font-weight: bold;
-        text-decoration: none; /* Remove default underline */
-        transition: all 0.3s ease; /* Smooth transition for hover effects */
-    }
-    
-    .stat-change.negative a:hover {
-        color: #f0f0f0; /* Slightly lighter white on hover */
-        text-decoration: underline; /* Add underline on hover */
-        transform: translateY(-1px); /* Subtle lift effect */
-        text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); /* Subtle glow effect */
-    }
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none; /* Remove default underline */
+            transition: all 0.3s ease; /* Smooth transition for hover effects */
+        }
+        
+        .stat-change.negative a:hover {
+            color: #f0f0f0; /* Slightly lighter white on hover */
+            text-decoration: underline; /* Add underline on hover */
+            transform: translateY(-1px); /* Subtle lift effect */
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); /* Subtle glow effect */
+        }
 
         /* Chart Section */
         .chart-section {
